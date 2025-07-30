@@ -14,7 +14,7 @@ GROUP_CHAT_ID = os.getenv("GROUP_CHAT_ID")
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO
 )
-logger = logging.getLogger(_name_)
+logger = logging.getLogger(name)
 
 users = {}  # user_id -> {"balance": int, "bets": list}
 matches = {
